@@ -1,0 +1,12 @@
+{% extends 'website/base.html' %}
+
+{% block body %}
+
+    <form action="" method="post" class="mt-4">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="Register" class="btn btn-primary px-3 m-3">
+    </form>
+
+{% endblock %}

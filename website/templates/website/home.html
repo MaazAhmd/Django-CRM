@@ -1,0 +1,11 @@
+{% extends 'website/base.html' %}
+
+{% block body %}
+
+{% if message %}
+<div class="alert alert-success mt-4 py-2" role="alert">
+    {{ message }}
+  </div>
+{% endif %}
+
+{% endblock %}
